@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;400;500;700&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   list-style: none;
+   font-family: "Roboto", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo-wrapper{
+   width: max-content;
+   padding: 40px;
+   margin: 50px auto;
+   background: #1d1c4a;
+   border-radius: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo-form{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.todo-input{
+   padding: 10px;
+   width: 300px;
+   height: 40px;
+   font-weight: 300;
+   font-size: 16px;
+   border: none;
+   background: transparent;
+   border: 1px solid #8c64fa;
+   color: #fff;
+}
+.todo-input:focus{
+   outline: none;
+}
+.todo-input::placeholder{
+   color: #929292;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-btn{
+   height: 40px;
+   width: 80px;
+   border: none;
+   background: #8c64fa;
+   color: #fff;
+   cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 15px;
+   border-radius: 6px;
+   background: #8c64fa;
+   color: #fff;
+   margin-bottom: 20px;
+}
+
+.todo .icons {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+}
+
+.title{
+   color: #fff;
+   font-weight: 400;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.icon{
+   cursor: pointer;
+}
+
+.icon-edit:hover{
+   color: #1d1c4a;
+}
+
+.icon-delete:hover{
+   color: rgb(229, 78, 78);
+}
+
+.complated{
+   text-decoration:line-through;
+   color: #d8d8d8d0;
+}
+
+.taskPara{
+   cursor: pointer;
+}
+
+.todo-count{
+   color: #fff;
+   text-align: center;
 }
